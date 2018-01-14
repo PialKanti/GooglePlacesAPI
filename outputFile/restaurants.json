@@ -1,0 +1,183 @@
+{
+  "Bittersweet Cafe": {
+    "types": [
+      "cafe",
+      "bakery",
+      "restaurant",
+      "food",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "address": "Dhaka 1209, Bangladesh",
+    "name": "Bittersweet Cafe",
+    "rating": 4.1,
+    "periods": [
+      {
+        "close": {
+          "time": "2230",
+          "day": 0
+        },
+        "open": {
+          "time": "1200",
+          "day": 0
+        }
+      },
+      {
+        "close": {
+          "time": "2230",
+          "day": 1
+        },
+        "open": {
+          "time": "1200",
+          "day": 1
+        }
+      },
+      {
+        "close": {
+          "time": "2230",
+          "day": 2
+        },
+        "open": {
+          "time": "1200",
+          "day": 2
+        }
+      },
+      {
+        "close": {
+          "time": "2230",
+          "day": 3
+        },
+        "open": {
+          "time": "1200",
+          "day": 3
+        }
+      },
+      {
+        "close": {
+          "time": "2230",
+          "day": 4
+        },
+        "open": {
+          "time": "1200",
+          "day": 4
+        }
+      },
+      {
+        "close": {
+          "time": "2230",
+          "day": 5
+        },
+        "open": {
+          "time": "1200",
+          "day": 5
+        }
+      },
+      {
+        "close": {
+          "time": "2230",
+          "day": 6
+        },
+        "open": {
+          "time": "1200",
+          "day": 6
+        }
+      }
+    ],
+    "phone_number": "01739-725431",
+    "location": {
+      "lng": 90.3788292,
+      "lat": 23.7398211
+    },
+    "url": "https://maps.google.com/?cid=14083586683831686840"
+  },
+  "CP": {
+    "types": [
+      "meal_takeaway",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "address": "53/c, Asad Ave, Dhaka 1207, Bangladesh",
+    "name": "CP",
+    "rating": 4.2,
+    "periods": [
+      {
+        "close": {
+          "time": "2200",
+          "day": 0
+        },
+        "open": {
+          "time": "1000",
+          "day": 0
+        }
+      },
+      {
+        "close": {
+          "time": "2200",
+          "day": 1
+        },
+        "open": {
+          "time": "1000",
+          "day": 1
+        }
+      },
+      {
+        "close": {
+          "time": "2200",
+          "day": 2
+        },
+        "open": {
+          "time": "1000",
+          "day": 2
+        }
+      },
+      {
+        "close": {
+          "time": "2200",
+          "day": 3
+        },
+        "open": {
+          "time": "1000",
+          "day": 3
+        }
+      },
+      {
+        "close": {
+          "time": "2200",
+          "day": 4
+        },
+        "open": {
+          "time": "1000",
+          "day": 4
+        }
+      },
+      {
+        "close": {
+          "time": "2200",
+          "day": 5
+        },
+        "open": {
+          "time": "1000",
+          "day": 5
+        }
+      },
+      {
+        "close": {
+          "time": "2200",
+          "day": 6
+        },
+        "open": {
+          "time": "1000",
+          "day": 6
+        }
+      }
+    ],
+    "location": {
+      "lng": 90.3626816,
+      "lat": 23.7581533
+    },
+    "url": "https://maps.google.com/?cid=77781364837793711"
+  }
+}

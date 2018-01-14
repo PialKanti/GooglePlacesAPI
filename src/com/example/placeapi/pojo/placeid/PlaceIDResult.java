@@ -1,5 +1,6 @@
-package com.example.placeapi.pojo;
+package com.example.placeapi.pojo.placeid;
 
+import com.example.placeapi.pojo.placeid.PlaceID;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;

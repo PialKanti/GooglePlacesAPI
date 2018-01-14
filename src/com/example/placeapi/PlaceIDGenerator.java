@@ -1,8 +1,8 @@
 package com.example.placeapi;
 
 import com.example.placeapi.http.HttpService;
-import com.example.placeapi.pojo.PlaceID;
-import com.example.placeapi.pojo.PlaceIDResult;
+import com.example.placeapi.pojo.placeid.PlaceID;
+import com.example.placeapi.pojo.placeid.PlaceIDResult;
 import com.example.placeapi.util.RequestUrlGenerator;
 import com.google.gson.Gson;
 

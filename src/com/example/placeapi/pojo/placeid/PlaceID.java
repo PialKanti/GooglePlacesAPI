@@ -1,4 +1,4 @@
-package com.example.placeapi.pojo;
+package com.example.placeapi.pojo.placeid;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -8,8 +8,6 @@ import com.google.gson.annotations.SerializedName;
  * Time: 2:27 PM
  */
 public class PlaceID {
-   /* @SerializedName("name")
-    String name;*/
     @SerializedName("place_id")
     String placeID;
     public String getPlaceID() {
