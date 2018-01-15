@@ -12,8 +12,14 @@ import java.util.List;
 public class OpeningHours {
     @SerializedName("periods")
     List<Period> periods;
+    @SerializedName("weekday_text")
+    List<String> weekDays;
 
     public List<Period> getPeriods() {
         return periods;
+    }
+
+    public List<String> getWeekDays() {
+        return weekDays;
     }
 }

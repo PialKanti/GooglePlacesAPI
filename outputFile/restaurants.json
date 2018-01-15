@@ -1,96 +1,4 @@
 {
-  "Bittersweet Cafe": {
-    "types": [
-      "cafe",
-      "bakery",
-      "restaurant",
-      "food",
-      "store",
-      "point_of_interest",
-      "establishment"
-    ],
-    "address": "Dhaka 1209, Bangladesh",
-    "name": "Bittersweet Cafe",
-    "rating": 4.1,
-    "periods": [
-      {
-        "close": {
-          "time": "2230",
-          "day": 0
-        },
-        "open": {
-          "time": "1200",
-          "day": 0
-        }
-      },
-      {
-        "close": {
-          "time": "2230",
-          "day": 1
-        },
-        "open": {
-          "time": "1200",
-          "day": 1
-        }
-      },
-      {
-        "close": {
-          "time": "2230",
-          "day": 2
-        },
-        "open": {
-          "time": "1200",
-          "day": 2
-        }
-      },
-      {
-        "close": {
-          "time": "2230",
-          "day": 3
-        },
-        "open": {
-          "time": "1200",
-          "day": 3
-        }
-      },
-      {
-        "close": {
-          "time": "2230",
-          "day": 4
-        },
-        "open": {
-          "time": "1200",
-          "day": 4
-        }
-      },
-      {
-        "close": {
-          "time": "2230",
-          "day": 5
-        },
-        "open": {
-          "time": "1200",
-          "day": 5
-        }
-      },
-      {
-        "close": {
-          "time": "2230",
-          "day": 6
-        },
-        "open": {
-          "time": "1200",
-          "day": 6
-        }
-      }
-    ],
-    "phone_number": "01739-725431",
-    "location": {
-      "lng": 90.3788292,
-      "lat": 23.7398211
-    },
-    "url": "https://maps.google.com/?cid=14083586683831686840"
-  },
   "CP": {
     "types": [
       "meal_takeaway",
@@ -178,6 +86,15 @@
       "lng": 90.3626816,
       "lat": 23.7581533
     },
+    "weekday_text": [
+      "Monday: 10:00 AM \u2013 10:00 PM",
+      "Tuesday: 10:00 AM \u2013 10:00 PM",
+      "Wednesday: 10:00 AM \u2013 10:00 PM",
+      "Thursday: 10:00 AM \u2013 10:00 PM",
+      "Friday: 10:00 AM \u2013 10:00 PM",
+      "Saturday: 10:00 AM \u2013 10:00 PM",
+      "Sunday: 10:00 AM \u2013 10:00 PM"
+    ],
     "url": "https://maps.google.com/?cid=77781364837793711"
   }
 }

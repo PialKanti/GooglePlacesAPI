@@ -28,30 +28,31 @@ public class PlaceDetailsGenerator {
             try {
                 // Reading from file
                 File file = new File("outputFile/placeIDs.txt");
-                Scanner in = new Scanner(file);
-                while (in.hasNext()) {
-                    String json = HttpService.readUrl(RequestUrlGenerator.getPlaceDetailsUrl(in.next()));
-                    GsonBuilder builder = new GsonBuilder();
-                    Gson gson = builder.serializeNulls().create();
-                    PlaceDetailsResult details = gson.fromJson(json, PlaceDetailsResult.class);
-                    // Generating Formatted JSON
-                    FormattedPlaceDetails formattedResult = new FormattedPlaceDetails();
-                    formattedResult.setName(details.getResult().getName());
-                    formattedResult.setAddress(details.getResult().getAddress());
-                    formattedResult.setPhoneNumber(details.getResult().getPhoneNumber());
-                    formattedResult.setLocation(details.getResult().getGeometry().getLocation());
-                    if (details.getResult().getOpeningHours() != null)
-                        formattedResult.setPeriods(details.getResult().getOpeningHours().getPeriods());
-                    formattedResult.setWeekDays(details.getResult().getWeekDays());
-                    formattedResult.setRating(details.getResult().getRating());
-                    formattedResult.setTypes(details.getResult().getTypes());
-                    formattedResult.setUrl(details.getResult().getUrl());
-
-                    Gson gsonPretty = new GsonBuilder().create();
-                    String formattedJson = gsonPretty.toJson(formattedResult);
-                    JSONObject object = new JSONObject(formattedJson);
-                    jsonObject.put(details.getResult().getName(), object);
+                //Scanner in = new Scanner(file);
+                //while (in.hasNext()) {
+                String json = HttpService.readUrl(RequestUrlGenerator.getPlaceDetailsUrl("ChIJjYC8c1m_VTcRrz9NPb1VFAE"));
+                GsonBuilder builder = new GsonBuilder();
+                Gson gson = builder.serializeNulls().create();
+                PlaceDetailsResult details = gson.fromJson(json, PlaceDetailsResult.class);
+                // Generating Formatted JSON
+                FormattedPlaceDetails formattedResult = new FormattedPlaceDetails();
+                formattedResult.setName(details.getResult().getName());
+                formattedResult.setAddress(details.getResult().getAddress());
+                formattedResult.setPhoneNumber(details.getResult().getPhoneNumber());
+                formattedResult.setLocation(details.getResult().getGeometry().getLocation());
+                if (details.getResult().getOpeningHours() != null) {
+                    formattedResult.setPeriods(details.getResult().getOpeningHours().getPeriods());
+                    formattedResult.setWeekDays(details.getResult().getOpeningHours().getWeekDays());
                 }
+                formattedResult.setRating(details.getResult().getRating());
+                formattedResult.setTypes(details.getResult().getTypes());
+                formattedResult.setUrl(details.getResult().getUrl());
+
+                Gson gsonPretty = new GsonBuilder().create();
+                String formattedJson = gsonPretty.toJson(formattedResult);
+                JSONObject object = new JSONObject(formattedJson);
+                jsonObject.put(details.getResult().getName(), object);
+                //}
             } catch (Exception e) {
                 e.printStackTrace();
             }

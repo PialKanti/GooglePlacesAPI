@@ -25,13 +25,14 @@ public class PlaceIDGenerator {
             resultIDs = new HashSet<>();
             File file = new File("inputFile/latlong.txt");
             Scanner in = new Scanner(file);
-            int n = in.nextInt();
-            for (int i = 0; i < n; i++) {
-                Double Lat = Double.valueOf(in.next());
-                Double Long = Double.valueOf(in.next());
-                String json = HttpService.readUrl(RequestUrlGenerator.getRadarSearchUrl(Lat, Long, 1000));
+            int count = 0;
+            while (in.hasNextLine()) {
+                String line = in.nextLine();
+                String[] latlong = line.split(" ");
+                String json = HttpService.readUrl(RequestUrlGenerator.getRadarSearchUrl(Double.valueOf(latlong[0]), Double.valueOf(latlong[1]), 1000));
                 Gson gson = new Gson();
                 PlaceIDResult result = gson.fromJson(json, PlaceIDResult.class);
+                count += result.getPlaceIDs().size();
                 System.out.println(result.getPlaceIDs().size()); //Todo remove
                 for (PlaceID id : result.getPlaceIDs()) {
                     if (!resultIDs.contains(id.getPlaceID())) {
@@ -40,6 +41,7 @@ public class PlaceIDGenerator {
                 }
             }
             PrintWriter pw = new PrintWriter("outputFile/placeIDs.txt");
+            System.out.println(count); //todo remove
             System.out.println(resultIDs.size()); //Todo remove
             for (String id : resultIDs) {
                 pw.println(id);

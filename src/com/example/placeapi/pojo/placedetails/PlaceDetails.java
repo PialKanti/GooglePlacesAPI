@@ -21,8 +21,6 @@ public class PlaceDetails {
     Geometry geometry;
     @SerializedName("opening_hours")
     OpeningHours hours;
-    @SerializedName("weekday_text")
-    List<String> weekDays;
     @SerializedName("place_id")
     String placeId;
     @SerializedName("rating")
@@ -50,10 +48,6 @@ public class PlaceDetails {
 
     public OpeningHours getOpeningHours() {
         return hours;
-    }
-
-    public List<String> getWeekDays() {
-        return weekDays;
     }
 
     public String getPlaceId() {
